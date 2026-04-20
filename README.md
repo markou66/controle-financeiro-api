@@ -1,6 +1,8 @@
 # 💰 API de Controle de Gastos
 
-Uma API RESTful desenvolvida em **Node.js** para gerenciamento de finanças pessoais. O projeto foi estruturado utilizando **Arquitetura Modular**, separando as responsabilidades entre Rotas e Controladores para garantir um código limpo, escalável e de fácil manutenção.
+Este é um projeto fundamental de Controle Financeiro, desenvolvido para consolidar conhecimentos em Node.js e Arquitetura Modular.
+
+Sendo uma aplicação de back-end simplificada, o foco principal foi a organização estrutural do código, dividindo as funções de forma lógica para facilitar a leitura e o crescimento do projeto. A API permite gerenciar entradas de gastos e fornece o cálculo automático do saldo total.
 
 ---
 
@@ -29,28 +31,54 @@ api-gastos/
 ```
 ---
 
-1. ## Adicionar Gasto
+## 🛠️ Funcionalidades e Demonstração
 
+### 1. Adicionar Gasto
 Responsável por receber uma descrição e um valor, validando os dados e armazenando o novo registro.
+* **Rota:** `POST /gastos`
 
-    Rota: POST /gastos
+![Criar Gasto](./img/GASTOS.png)
 
-    Status: 201 Created
-
-2. ## Listar Todos os Gastos
-
+### 2. Listar Todos os Gastos
 Retorna a lista completa de todos os gastos cadastrados até o momento.
+* **Rota:** `GET /listar-gasto`
 
-    Rota: GET /listar-gasto
+![Listar Gastos](./img/LISTAR-GASTO.png)
 
-    Status: 200 OK
-
-3. ## Somatório Total
-
+### 3. Visualizar o Valor Total
 Calcula dinamicamente a soma de todos os valores presentes na lista.
+* **Rota:** `GET /gasto/total`
 
-    Rota: GET /gasto/total
+![Valor Total](./img/TOTAL.png)
 
-    Status: 200 OK
 
 ---
+
+## ⚙️ Como rodar o projeto
+
+### 1. Clonar o repositório 
+
+`git clone https://github.com/markou66/controle-financeiro-api.git`
+
+---
+
+2. Entrar na pasta
+
+`cd controle-financeiro-api`
+
+---
+
+3. Instalar as dependências
+
+   `npm install`
+
+---
+
+4. Iniciar o servidor
+
+   `node server.js`
+
+---
+
+
+
