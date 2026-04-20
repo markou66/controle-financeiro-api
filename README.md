@@ -70,13 +70,13 @@ Calcula dinamicamente a soma de todos os valores presentes na lista.
 
 3. Instalar as dependências
 
-   `npm install`
+`npm install`
 
 ---
 
 4. Iniciar o servidor
 
-   `node server.js`
+`node server.js`
 
 ---
 
